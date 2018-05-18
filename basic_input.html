@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Input Display</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="">
+		<p>When you type your name in the box, it will display below</p>
+		<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+		<h1>Hello, {{name}}</h1>
+		<h3>Pretty cool, right?</h3>
+		<p>Using the Google API (application programming interface) and AJAX, the angular model is created live as the client enters it. This is basically how front-end frameworks work; they take info from the client and validate/ save data from inputs right then and there, rather than sending inputs to the back end for validation. This makes everything faster (and cooler) and leads to a better user experience.</p>
+		<p>In this instance, no database is being utilized. The ng-model, "name" is called directly below the input box</p>
+	</div>
+</body>
+</html>
